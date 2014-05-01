@@ -16,15 +16,15 @@ class Compra extends AppModel {
 		'piezas' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'Indica una cantidad de piezas',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'range' => array(
-				'rule' => array('range'),
-				//'message' => 'Your custom message here',
+				'rule' => array('range',array(0,10000)),
+				'message' => 'Coloca un valor, el rango es de 0 a 10,000',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -34,15 +34,15 @@ class Compra extends AppModel {
 		'monto_compra' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'Indica una cantidad numerica para el monto',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'range' => array(
-				'rule' => array('range'),
-				//'message' => 'Your custom message here',
+				'rule' => array('range',array(0,1000000000)),
+				'message' => 'Coloca un rango de 0 a un 1,000,000,000.00',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

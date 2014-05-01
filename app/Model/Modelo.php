@@ -26,7 +26,7 @@ class Modelo extends AppModel {
 		'nombre' => array(
 			'alphanumeric' => array(
 				'rule' => array('alphanumeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'Algo esta mal, aqui anotas el nombre (tipo: alfanumérico)',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -34,7 +34,7 @@ class Modelo extends AppModel {
 			),
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Este campo no puede estar vacío',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -44,7 +44,7 @@ class Modelo extends AppModel {
 		'descripcion' => array(
 			'alphanumeric' => array(
 				'rule' => array('alphanumeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'algo esta mal, este campo es del tipo alfanumérico',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -52,7 +52,7 @@ class Modelo extends AppModel {
 			),
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Este campo no puede estar vacío',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -62,15 +62,15 @@ class Modelo extends AppModel {
 		'cantidad_en_bodega' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				//'message' => 'Your custom message here',
+				'message' => 'Algo esta mal, aqui van solo valores decimales',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'range' => array(
-				'rule' => array('range'),
-				//'message' => 'Your custom message here',
+				'rule' => array('range',array(0,10000)),
+				'message' => 'El valor esta fuera de rango, los valores son de 0 a 10,000',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -80,15 +80,15 @@ class Modelo extends AppModel {
 		'cantidad_en_fabrica' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				//'message' => 'Your custom message here',
+				'message' => 'Algo esta mal, aquí van solo valores decimales',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'range' => array(
-				'rule' => array('range'),
-				//'message' => 'Your custom message here',
+				'rule' => array('range',array(0,100000)),
+				'message' => 'Los valores de este campo son  de 0 a 100,000, algo paso ',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -98,15 +98,15 @@ class Modelo extends AppModel {
 		'precio' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				//'message' => 'Your custom message here',
+				'message' => 'Aquí solo van valores decimales',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'range' => array(
-				'rule' => array('range'),
-				//'message' => 'Your custom message here',
+				'rule' => array('range',array(0,1000000000)),
+				'message' => 'El rango esta mal, los valores va de 0 a 1,000,000.00',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -116,15 +116,15 @@ class Modelo extends AppModel {
 		'costo' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				//'message' => 'Your custom message here',
+				'message' => 'Algo esta mal, en este campo son solo decimales',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'range' => array(
-				'rule' => array('range'),
-				//'message' => 'Your custom message here',
+				'rule' => array('range',aaray(0,1000000000)),
+				'message' => 'Algo paso, los valores de este campo van de 0 a 1,000,000,000.00',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

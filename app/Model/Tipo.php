@@ -23,7 +23,7 @@ class Tipo extends AppModel {
 		'nombre' => array(
 			'alphanumeric' => array(
 				'rule' => array('alphanumeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'Este campo es para el nombre',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -31,7 +31,7 @@ class Tipo extends AppModel {
 			),
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'No puedes dejar vacío este campo',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

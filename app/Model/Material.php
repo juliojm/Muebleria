@@ -25,7 +25,7 @@ class Material extends AppModel {
 		'nombre' => array(
 			'alphanumeric' => array(
 				'rule' => array('alphanumeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'Aquí escribe el nombre del material (tipo: alfanumérico)',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -33,7 +33,7 @@ class Material extends AppModel {
 			),
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Este campo no puede estar vacío',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -43,15 +43,15 @@ class Material extends AppModel {
 		'costo' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				//'message' => 'Your custom message here',
+				'message' => 'Hey, aquí anotas valores decimales',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'range' => array(
-				'rule' => array('range'),
-				//'message' => 'Your custom message here',
+				'rule' => array('range',array(0,1000000000)),
+				'message' => 'El valor esta fuera de rango, los valores son de 0 a 1,000,000,000.00',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

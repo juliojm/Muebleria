@@ -16,8 +16,8 @@ class Consumible extends AppModel {
 	public $validate = array(
 		'cantidad' => array(
 			'range' => array(
-				'rule' => array('range'),
-				//'message' => 'Your custom message here',
+				'rule' => array('range',array(0,1000000000)),
+				'message' => 'Esta fuera de rango, los valores son de 0 a 1,000,000,000',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -25,7 +25,7 @@ class Consumible extends AppModel {
 			),
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'Aquí colocas solo valores numéricos',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
