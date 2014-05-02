@@ -1,0 +1,40 @@
+﻿
+**********************************************************
+				Acciones de los Controladores
+**********************************************************
+
+	ArchivosController
+		cargar_archivo
+		modificar_archivo
+		eliminar_archivo
+	
+	ComprasController
+		crear_compra
+		modificar_compra
+		eliminar_compra
+		ver_compra
+			
+	ConsumiblesController
+		
+	
+	MaterialesController
+	
+	ModelosController
+		crear_modelo
+		modificar_modelo
+		eliminar_modelo
+		ver_modelo
+	
+	SuppliersController
+	
+	TiposController
+	
+	UsersController
+		iniciar_sesion
+		cerrar_sesion
+	
+	VentasController
+		crear_venta
+		modificar_venta
+		eliminar_venta
+		ver_venta
