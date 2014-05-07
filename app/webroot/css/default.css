@@ -6,7 +6,7 @@
 	   
 	
 	.boton{
-		background: #5bb531;
+		background: #5DB8B1;
 		font-size: 13px;
 		color: white;
 		width:90px;
@@ -21,15 +21,17 @@
 	
 	
 	#encabezado{
-		padding-top:5px; 
+		padding-top:30px; 
+		padding-bottom:30px;
 		color:silver;
 		font-size:30px;
+		background: #6DD4B7;
 	}
 	
 	
-	#espacio1{
-		height:300px;
-		background:##87CAE5;
+	#espacio{
+		height:520px;
+		background:#C3F0C5;
 		padding-top:30px; 
 		color:#ffffff;
 		text-align:center;

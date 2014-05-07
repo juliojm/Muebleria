@@ -21,9 +21,13 @@
 	<div id="contenedor">
 	   
 		<div id="encabezado">
-			<div class="Boton"></div>
-			<div class="Boton"></div>
-			<div class="Boton"></div>	
+			<div id="Letras">Sistema Mueblería</div>
+			<div class="Boton">Boton1</div>
+			<div class="Boton">Boton2</div>
+			<div class="Boton">Boton3</div>	
+			<div style="float:none;clear:both"> </div>
+			
+			
 		</div>
 		
 		<div id ="espacio">
