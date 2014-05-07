@@ -4,37 +4,52 @@
 **********************************************************
 
 	ArchivosController
-		cargar_archivo
-		modificar_archivo
-		eliminar_archivo
+		[]cargar_archivo
+		[]modificar_archivo
+		[]eliminar_archivo
 	
 	ComprasController
-		crear_compra
-		modificar_compra
-		eliminar_compra
-		ver_compra
+		[]crear_compra
+		[]modificar_compra
+		[]eliminar_compra
+		[]ver_compra
 			
 	ConsumiblesController
+		[]alta_consumible
+		[]modificar_consumible
+		[]eliminar_consumible
+		
 		
 	
 	MaterialesController
+		[]alta_material
+		[]modificar_material
+		[]eliminar_material
+		[]ver_materiales
 	
 	ModelosController
-		crear_modelo
-		modificar_modelo
-		eliminar_modelo
-		ver_modelo
+		[]crear_modelo
+		[]modificar_modelo
+		[]eliminar_modelo
+		[]ver_modelo
 	
 	SuppliersController
+		[]crear_supplier
+		[]modificar_supplier
+		[]eliminar_supplier
+		[]ver_suppliers
+		
 	
 	TiposController
+		[]dar_alta_tipo
+		[]eliminar_tipo
 	
 	UsersController
-		iniciar_sesion
-		cerrar_sesion
+		[]iniciar_sesion
+		[]cerrar_sesion
 	
 	VentasController
-		crear_venta
-		modificar_venta
-		eliminar_venta
-		ver_venta
+		[]crear_venta
+		[]modificar_venta
+		[]eliminar_venta
+		[]ver_venta
