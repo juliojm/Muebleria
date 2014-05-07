@@ -1,0 +1,40 @@
+﻿	#contenedor{
+		
+		width: 100%; 
+		
+	}
+	   
+	
+	.boton{
+		background: #5bb531;
+		font-size: 13px;
+		color: white;
+		width:90px;
+		border-radius: 5px;
+		text-align:center;
+		padding:8px;
+		float:right;
+		margin-left:50px;
+		margin-right:50px;
+		margin-top:5px;
+	}
+	
+	
+	#encabezado{
+		padding-top:5px; 
+		color:silver;
+		font-size:30px;
+	}
+	
+	
+	#espacio1{
+		height:300px;
+		background:##87CAE5;
+		padding-top:30px; 
+		color:#ffffff;
+		text-align:center;
+		
+		 
+		
+	
+	}
