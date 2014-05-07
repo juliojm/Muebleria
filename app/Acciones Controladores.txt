@@ -47,6 +47,8 @@
 	UsersController
 		[]iniciar_sesion
 		[]cerrar_sesion
+		[]registrarse
+		[]principal
 	
 	VentasController
 		[]crear_venta
