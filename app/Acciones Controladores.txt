@@ -4,15 +4,15 @@
 **********************************************************
 
 	ArchivosController
-		[]cargar_archivo
-		[]modificar_archivo
-		[]eliminar_archivo
+		[]cargar
+		[]modificar
+		[]eliminar
 	
 	ComprasController
 		[]crear_compra
 		[]modificar_compra
 		[]eliminar_compra
-		[]ver_compra
+		[]ver_compras
 			
 	ConsumiblesController
 		[]alta_consumible
@@ -45,9 +45,9 @@
 		[]eliminar_tipo
 	
 	UsersController
-		[]iniciar_sesion
-		[]cerrar_sesion
-		[]registrarse
+		[]login
+		[]logout
+		[]registrar
 		[]principal
 	
 	VentasController
