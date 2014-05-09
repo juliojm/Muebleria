@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
@@ -21,10 +21,12 @@
 	<div id="contenedor">
 	   
 		<div id="encabezado">
-			<div id="Letras">Sistema Muebler�a</div>
-			<div class="Boton">Boton1</div>
-			<div class="Boton">Boton2</div>
-			<div class="Boton">Boton3</div>	
+			<div id="Letras">Sistema Mueblería</div>
+			<div id="menu">
+				<div class="Boton">Boton1</div>
+				<div class="Boton">Boton2</div>
+				<div class="Boton">Boton3</div>	
+			</div>
 			<div style="float:none;clear:both"> </div>
 			
 			
