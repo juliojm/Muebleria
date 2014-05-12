@@ -9,18 +9,12 @@
 		[]eliminar
 	
 	ComprasController
-<<<<<<< HEAD
 		[]crear
 		[]modificar
 		[]eliminar
 		[]ver
-=======
-		[]crear_compra
-		[]modificar_compra
-		[]eliminar_compra
-		[]ver_compras
->>>>>>> 3b8ae8e3818f425bb9338128dcc96de53eb79392
-			
+
+
 	ConsumiblesController
 		[]alta
 		[]modificar
@@ -48,7 +42,8 @@
 		
 	
 	TiposController
-		[]dar_alta
+		[]alta
+		[]ver
 		[]eliminar
 	
 	UsersController
@@ -56,6 +51,7 @@
 		[]logout
 		[]registrar
 		[]principal
+		[]mimuebleria
 	
 	VentasController
 		[]crear
