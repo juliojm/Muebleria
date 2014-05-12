@@ -123,7 +123,7 @@ class Modelo extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'range' => array(
-				'rule' => array('range',aaray(0,1000000000)),
+				'rule' => array('range',array(0,1000000000)),
 				'message' => 'Algo paso, los valores de este campo van de 0 a 1,000,000,000.00',
 				//'allowEmpty' => false,
 				//'required' => false,
