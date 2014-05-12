@@ -3,11 +3,10 @@
 App::uses('Controller', 'Controller');
 
 class AppController extends Controller {
-
-
+	public $scaffold;
+	public $components=array('Auth','Session');
 	public function beforeFilter(){
-		public $components	=	array('Auth','Session');
-		
-	}
+		$this->Auth->allow('index','view','add','edit','delet');
 	
+	}
 }
