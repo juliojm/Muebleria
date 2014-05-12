@@ -33,7 +33,9 @@
 		</div>
 		
 		<div id ="espacio">
-	
+		
+			
+				<?php echo $this->Session->Flash();?>
 				<?php echo $this->fetch('content'); ?>
 		
 		</div>
