@@ -72,11 +72,29 @@
 .boton_crear_cuenta{
 	display:block;
 	padding:15px 20px;
+	background:D2691E;
+	color:black;
+	text-align:center;
+	margin:5px auto;
+	width:90px;
+	border-radius:3px;
+	text-decoration:none;
+}
+
+.loguear{
+	width: 0%;
+	float:right;
+	padding-top: 133px;
+}
+
+.logueo{
+	display:block;
+	padding:15px 20px;
 	background:gray;
 	color:white;
 	text-align:center;
 	margin:5px auto;
-	width:150px;
+	width:50px;
 	border-radius:50px;
 	text-decoration:none;
 }

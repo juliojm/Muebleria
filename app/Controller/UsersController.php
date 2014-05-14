@@ -7,7 +7,7 @@ class UsersController extends AppController {
 
 	public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('registrar','logout','login');
+		$this->Auth->allow('registrar','logout','login','logear');
 	}
 
 /*****************************************************************************************************/
@@ -51,22 +51,22 @@ class UsersController extends AppController {
 
 /*****************************************************************************************************/
 
-	public function loguear(){
+	public function logear(){
 		$this->layout='Ajax';
 		$id = $this->Auth->User('id');
 		$data = $this->User->findById($id);
 		$this->set('data' , $data);
 	}
 
-}
+
 
 /*****************************************************************************************************/
 
 
 public function principal(){
 
-
 }
+
 public function mimuebleria(){
 
 }
