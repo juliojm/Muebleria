@@ -64,10 +64,12 @@ class UsersController extends AppController {
 
 
 public function principal(){
+	
 
 }
 
 public function mimuebleria(){
 
-}
+	
+	}
 }

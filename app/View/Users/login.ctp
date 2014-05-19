@@ -1,4 +1,5 @@
 ﻿<?php
+	echo"<h2>Aquí puedes iniciar tu sesión.</h2>";
 	echo $this->Form->create();
 		echo $this->Form->input('username');
 		echo $this->Form->input('password');
