@@ -1,6 +1,11 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Changa+One);
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
 
+*{
+	font-family:verdana, arial;
+	font-size:15px;
+	
+}
 	body{
 		padding:0px;
 		margin:0px;
@@ -97,4 +102,26 @@
 	width:50px;
 	border-radius:50px;
 	text-decoration:none;
+}
+.loguear{
+	width: 0%;
+	float:right;
+	padding-top: 133px;
+}
+
+div.text input, div.password input{
+	width:300px;
+	padding: 5px;
+}
+
+div.submit input{
+	width:300px;
+	padding:5px;
+	margin-left:150px;
+	
+}
+
+label{
+	width:150px;
+	display:inline-block;
 }
