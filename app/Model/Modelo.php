@@ -24,14 +24,6 @@ class Modelo extends AppModel {
  */
 	public $validate = array(
 		'nombre' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				'message' => 'Algo esta mal, aqui anotas el nombre (tipo: alfanumérico)',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 			'notempty' => array(
 				'rule' => array('notempty'),
 				'message' => 'Este campo no puede estar vacío',
@@ -42,14 +34,6 @@ class Modelo extends AppModel {
 			),
 		),
 		'descripcion' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				'message' => 'algo esta mal, este campo es del tipo alfanumérico',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 			'notempty' => array(
 				'rule' => array('notempty'),
 				'message' => 'Este campo no puede estar vacío',
