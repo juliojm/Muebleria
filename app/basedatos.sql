@@ -11,7 +11,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Volcando estructura de base de datos para muebleria
-CREATE DATABASE IF NOT EXISTS `muebleria` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE IF NOT EXISTS `muebleria` /reunionesmuebleria*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `muebleria`;
 
 
