@@ -35,7 +35,7 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 				if ($this->Auth->login()) {
 					$this->Session->setFlash("Te logueaste con éxito.");
-					return $this->redirect('/');
+					return $this->redirect('/users/principal');
 				}
 				$this->Session->setFlash("Usuario o contraseña incorrecta.");
 			}
@@ -46,6 +46,7 @@ class UsersController extends AppController {
 
 	public function logout(){
 		$this->redirect($this->Auth->logout());
+		
 
 }
 
@@ -62,6 +63,22 @@ class UsersController extends AppController {
 
 /*****************************************************************************************************/
 
+public function index(){
+
+		$id = $this->Auth->User('id');
+		$data = $this->User->find("all");	
+		$this->set('data' , $data);
+	}
+
+/*****************************************************************************************************/
+	public function ver($id){	
+
+		$data = $this->User->findById($id);
+		$this->set('data',$data);
+		
+}	
+
+/*****************************************************************************************************/
 
 public function principal(){
 	
