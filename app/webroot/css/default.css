@@ -132,3 +132,14 @@ label{
 	width:150px;
 	display:inline-block;
 }
+
+.error-message{
+	color: #FF0000;
+	font-size: 15px;
+	font-family: arial;
+}
+
+form .error{
+	background: #FFFF00;
+	
+}
