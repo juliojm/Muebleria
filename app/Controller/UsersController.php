@@ -18,7 +18,7 @@ class UsersController extends AppController {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash('EL usuario se ha registrado con éxito');
-				$this->redirect('/users/principal');
+				$this->redirect('/users/index');
 			}
 			$this->Session->setFlash('Ocurrió un problema al momento de registrar al usuario.');
 		}
@@ -27,11 +27,6 @@ class UsersController extends AppController {
 /*****************************************************************************************************/	
 
 	public function login(){
-	
-	$data = array(
-			'Crear cuenta|/users/registrar',
-		);
-		$this->set('data',$data);
 		if ($this->request->is('post')) {
 				if ($this->Auth->login()) {
 					$this->Session->setFlash("Te logueaste con éxito.");
@@ -55,8 +50,10 @@ class UsersController extends AppController {
 	public function logear(){
 		$this->layout='Ajax';
 		$id = $this->Auth->User('id');
-		$data = $this->User->findById($id);
-		$this->set('data' , $data);
+		if ($data = $this->User->findById($id))
+			$this->set('data' , "<a href='/users/logout'>Cerrar sesion</a>");
+		else
+			$this->set('data',"<a href='/users/login'>Inicia Sesión</a>");
 	}
 
 
@@ -79,6 +76,43 @@ public function index(){
 }	
 
 /*****************************************************************************************************/
+	public function borrar($id){
+	
+		if($this->User->delete($id)){
+			$this->Session->setFlash('El Usuario se borro corrextamente');
+			$this->redirect('/users/index');
+		}
+		$this->Session->setFlash('Ocurrio un problema al borrar este usuario');
+		$this->redirect('/users/index');
+		
+}
+
+/*****************************************************************************************************/
+	public function editar($id=-9999999){
+	
+		if ($id==-9999999){
+			$this->Session->setFlash('Necesitas especificar un usuario');
+			$this->redirect('/users/index');
+		}
+		if ($this->request->is('post')) {
+			$this->User->id=$id;
+			if($this->User->save($this->request->data)){
+				$this->Session->setFlash('El regsitro se ha modifico exitosamente');
+				$this->redirect('/users/');
+			}
+			$this->Session->setFlash('Ocurrio un problema la modificar el registro');
+		}
+		if($data=$this->User->findById($id)){
+			$this->set('data',$data);
+		}
+		else{
+			$this->Session->setFlash('No se ha encontrado al Usuario');
+			$this->redirect('/users/');
+		}
+			
+	
+	}
+	
 
 public function principal(){
 	
