@@ -3,6 +3,8 @@ App::uses('AppController', 'Controller');
 
 class UsersController extends AppController {
 
+															 /* CONTROLODADOR ELABORADO POR  --JULIO--*/
+
 /*****************************************************************************************************/
 
 	public function beforeFilter(){
@@ -70,8 +72,13 @@ public function index(){
 /*****************************************************************************************************/
 	public function ver($id){	
 
-		$data = $this->User->findById($id);
-		$this->set('data',$data);
+	if($data=$this->User->findById($id)){
+			$this->set('data',$data);
+		}
+		else{
+			$this->Session->setFlash('No se encontro el ID de este usuario');
+			$this->redirect('/users/');
+		}
 		
 }	
 
@@ -97,21 +104,23 @@ public function index(){
 		if ($this->request->is('post')) {
 			$this->User->id=$id;
 			if($this->User->save($this->request->data)){
-				$this->Session->setFlash('El regsitro se ha modifico exitosamente');
+				$this->Session->setFlash('El regsitro se ha modificado exitosamente');
 				$this->redirect('/users/');
 			}
-			$this->Session->setFlash('Ocurrio un problema la modificar el registro');
+			$this->Session->setFlash('Ocurrio un problema al modificar el registro');
 		}
 		if($data=$this->User->findById($id)){
 			$this->set('data',$data);
 		}
 		else{
-			$this->Session->setFlash('No se ha encontrado al Usuario');
+			$this->Session->setFlash('No se encontro a este usuario');
 			$this->redirect('/users/');
 		}
 			
 	
 	}
+	
+/*****************************************************************************************************/
 	
 
 public function principal(){
@@ -120,8 +129,4 @@ public function principal(){
 	
 }
 
-public function mimuebleria(){
-
-	
-	}
 }

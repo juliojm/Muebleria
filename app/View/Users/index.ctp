@@ -24,5 +24,5 @@ foreach ($data as $usuario ){
 
 ?>
 </table>
-
+</br>
 <a class='boton_crear_nueva_cuenta' href="/users/registrar">Registrar nuevo usuario</a>
