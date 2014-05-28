@@ -22,14 +22,6 @@ class Supplier extends AppModel {
  */
 	public $validate = array(
 		'nombre' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				'message' => 'Algo esta mal, este campo es para el nombre(tipo: alfanumérico)',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 			'notempty' => array(
 				'rule' => array('notempty'),
 				'message' => 'Este campo no puede estar vacío',

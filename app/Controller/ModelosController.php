@@ -41,6 +41,22 @@ public function index(){
 	
 }
 
+/************************************************************/
+
+public function ver ($id){
+	$this->Modelo->recursive=3;
+	if($data=$this->Modelo->findById($id)){
+		$this->set('data',$data);
+		}
+	else
+	{
+		$this->Session->setFlash('No se encontro el ID de este modelo');
+		$this->redirect('/modelos/');
+	}
+
+
+
+}
 
 
 }

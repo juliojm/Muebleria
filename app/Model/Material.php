@@ -23,14 +23,6 @@ class Material extends AppModel {
  */
 	public $validate = array(
 		'nombre' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				'message' => 'Aquí escribe el nombre del material (tipo: alfanumérico)',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 			'notempty' => array(
 				'rule' => array('notempty'),
 				'message' => 'Este campo no puede estar vacío',
