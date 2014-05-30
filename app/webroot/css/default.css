@@ -93,6 +93,14 @@
 
 }
 
+.boton_crear_nuevo_supplier{
+	font-size: 20px;
+	font-family:Times;
+	text-align:right;
+	color: #1515FF;
+
+}
+
 .loguear{
 	width: 0%;
 	float:right;

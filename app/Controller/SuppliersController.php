@@ -3,6 +3,8 @@ App::uses('AppController', 'Controller');
 
 class SuppliersController extends AppController {
 
+	 /* CONTROLODADOR ELABORADO POR  --JULIO--*/
+
 /************************************************************/
 
 	public function beforeFilter(){
