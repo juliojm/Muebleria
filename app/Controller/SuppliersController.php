@@ -51,10 +51,10 @@ class SuppliersController extends AppController {
 	
 		if($this->Supplier->delete($id)){
 			$this->Session->setFlash('Este Supplier se borro corrextamente');
-			$this->redirect('/users/index');
+			$this->redirect('/suppliers/index');
 		}
 		$this->Session->setFlash('Ocurrio un problema al borrar este Supplier');
-		$this->redirect('/users/index');
+		$this->redirect('/suppliers/index');
 		
 }
 
