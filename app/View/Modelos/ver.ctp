@@ -14,7 +14,9 @@
 	echo  "Cantidad: ",$c[0]["cantidad"]."<br/>";
 	
 	echo "<h1>Los proveedores para este modelo son los siguientes</h1>" ;
-	echo  "Nombre: ",$c[0]["Material"]["Consumible"]["nombre"]."<br/>";
+	foreach($data["Consumible"]["0"]["Material"]["Supplier"] as $s){
+		echo  "Nombre: ",$s["nombre"]."<br/>";
+	}
 	debug($data);
 	
 	
