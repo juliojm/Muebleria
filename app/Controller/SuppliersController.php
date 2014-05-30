@@ -28,7 +28,7 @@ class SuppliersController extends AppController {
 				$this->Session->setFlash('Este Supplier se ha registrado con éxito');
 				$this->redirect('/suppliers/index');
 			}
-			$this->Session->setFlash('Ocurrió un problema al momento de registrar este Suppier.');
+			$this->Session->setFlash('Ocurrió un problema al momento de registrar este Supplier.');
 		}
 	}
 
