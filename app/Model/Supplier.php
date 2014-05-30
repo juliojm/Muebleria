@@ -5,6 +5,7 @@ App::uses('AppModel', 'Model');
  *
  * @property Material $Material
  */
+
 class Supplier extends AppModel {
 
 /**
@@ -67,14 +68,6 @@ class Supplier extends AppModel {
 			),
 		),
 		'contacto' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				'message' => 'Este campo es del tipo alfanumérico',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 			'notempty' => array(
 				'rule' => array('notempty'),
 				'message' => 'No puedes dejar vacío este campo',
