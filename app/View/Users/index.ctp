@@ -1,4 +1,4 @@
-﻿<table border=1>
+﻿<table style='border-collapse:collapse;' border=2 width=80%>
 <tr>
 	<th>Nombre de Usuario</th>
 	<th>Username</th>
