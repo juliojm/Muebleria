@@ -9,7 +9,7 @@ class SuppliersController extends AppController {
 
 	public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow();
+			
 		
 	}
 /*****************************************************************************************************/
@@ -52,7 +52,7 @@ class SuppliersController extends AppController {
 	public function borrar($id){
 	
 		if($this->Supplier->delete($id)){
-			$this->Session->setFlash('Este Supplier se borro corrextamente');
+			$this->Session->setFlash('Este Supplier se borro correctamente');
 			$this->redirect('/suppliers/index');
 		}
 		$this->Session->setFlash('Ocurrio un problema al borrar este Supplier');
