@@ -11,7 +11,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Volcando estructura de base de datos para muebleria
-CREATE DATABASE IF NOT EXISTS `muebleria` /reunionesmuebleria*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE IF NOT EXISTS `muebleria` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `muebleria`;
 
 
@@ -31,8 +31,8 @@ CREATE TABLE IF NOT EXISTS `archivos` (
 -- Volcando estructura para tabla muebleria.compras
 CREATE TABLE IF NOT EXISTS `compras` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `piezas` decimal(10,0) DEFAULT NULL,
-  `monto_compra` decimal(10,0) DEFAULT NULL,
+  `piezas` float DEFAULT NULL,
+  `monto_compra` float DEFAULT NULL,
   `material_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `consumibles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `material_id` int(11) DEFAULT NULL,
   `modelo_id` int(11) DEFAULT NULL,
-  `cantidad` decimal(10,0) DEFAULT NULL,
+  `cantidad` float DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -60,13 +60,14 @@ CREATE TABLE IF NOT EXISTS `consumibles` (
 CREATE TABLE IF NOT EXISTS `materials` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(255) DEFAULT NULL,
-  `costo` decimal(10,0) DEFAULT NULL,
-  `supplier_id` int(11) DEFAULT NULL,
+  `costo` float DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
--- Volcando datos para la tabla muebleria.materials: ~0 rows (aproximadamente)
+-- Volcando datos para la tabla muebleria.materials: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `materials` DISABLE KEYS */;
+INSERT INTO `materials` (`id`, `nombre`, `costo`) VALUES
+	(7, 'Tornillos', 34.67);
 /*!40000 ALTER TABLE `materials` ENABLE KEYS */;
 
 
@@ -74,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `materials` (
 CREATE TABLE IF NOT EXISTS `materials_suppliers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `material_id` int(11) DEFAULT NULL,
-  `suppliers_id` int(11) DEFAULT NULL,
+  `supplier_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -88,10 +89,10 @@ CREATE TABLE IF NOT EXISTS `modelos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(255) DEFAULT NULL,
   `descripcion` varchar(255) DEFAULT NULL,
-  `cantidad_en_bodega` decimal(10,0) DEFAULT NULL,
-  `cantidad_en_fabrica` decimal(10,0) DEFAULT NULL,
-  `precio` decimal(10,0) DEFAULT NULL,
-  `costo` decimal(10,0) DEFAULT NULL,
+  `cantidad_en_bodega` float DEFAULT NULL,
+  `cantidad_en_fabrica` float DEFAULT NULL,
+  `precio` float DEFAULT NULL,
+  `costo` float DEFAULT NULL,
   `tipo_id` int(11) DEFAULT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
@@ -110,12 +111,15 @@ CREATE TABLE IF NOT EXISTS `suppliers` (
   `telefono` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `contacto` varchar(255) DEFAULT NULL,
-  `material_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
--- Volcando datos para la tabla muebleria.suppliers: ~0 rows (aproximadamente)
+-- Volcando datos para la tabla muebleria.suppliers: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `suppliers` DISABLE KEYS */;
+INSERT INTO `suppliers` (`id`, `nombre`, `telefono`, `email`, `contacto`) VALUES
+	(3, 'Juan', '4641234567', 'juan@gmail.com', 'Llamar a Celular'),
+	(4, 'rosa', '4641234567', 'rosa@hotmail.com', 'Es una proveedore'),
+	(5, 'Brenda', '4641239078', 'brendina@gmail.com', 'su mama y su tia');
 /*!40000 ALTER TABLE `suppliers` ENABLE KEYS */;
 
 
@@ -140,10 +144,15 @@ CREATE TABLE IF NOT EXISTS `users` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
--- Volcando datos para la tabla muebleria.users: ~0 rows (aproximadamente)
+-- Volcando datos para la tabla muebleria.users: ~5 rows (aproximadamente)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` (`id`, `name`, `username`, `password`, `created`, `modified`) VALUES
+	(7, 'Julio', 'yulius', 'd2904b255e5b79508081744ce6589b05a11da41d', '2014-05-12 13:24:52', '2014-05-12 13:24:52'),
+	(13, 'Nuevo Juana', 'juana', 'd2904b255e5b79508081744ce6589b05a11da41d', '2014-05-26 12:44:59', '2014-06-01 23:52:22'),
+	(14, 'Juana', 'juana', 'd2904b255e5b79508081744ce6589b05a11da41d', '2014-05-26 12:45:50', '2014-06-01 23:52:39'),
+	(15, 'Julio', 'yulius1', 'd2904b255e5b79508081744ce6589b05a11da41d', '2014-05-26 14:48:20', '2014-05-26 14:51:12');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 
