@@ -17,7 +17,10 @@
 	foreach($data["Consumible"]["0"]["Material"]["Supplier"] as $s){
 		echo  "Nombre: ",$s["nombre"]."<br/>";
 	}
-	debug($data);
+	
+	
+	echo '<a href="/modelos/eliminar/'.$data["Modelo"]["id"].'">Borrar Modelo</a>';
+	//debug($data);
 	
 	
 	

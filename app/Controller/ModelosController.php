@@ -58,5 +58,19 @@ public function ver ($id){
 
 }
 
+/************************************************************/
+
+
+public function eliminar($id){
+
+	if($this->Modelo->delete($id)){
+			$this->Session->setFlash('El modelo se borro corrextamente');
+			$this->redirect('/modelos/');
+		}
+		$this->Session->setFlash('Ocurrio un problema al borrar este modelo');
+		$this->redirect('/modelos/');
+
+
+}
 
 }
