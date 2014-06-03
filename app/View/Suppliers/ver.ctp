@@ -5,4 +5,4 @@
 	echo  "Email : ",$data["Supplier"]["email"],"<br/>";
 	echo  "Contacto : ",$data["Supplier"]["contacto"],"<br/>";
 	
-	echo '<a href="/suppliers/borrar/'.$data["Supplier"]["id"].'">Borrar Supplier</a>';
+	echo $this->Html->link('[Borrar]','/suppliers/borrar/'.$data['Supplier']['id'],array(),'¿Estas seguro de querer borrar "'.$data['Supplier']['nombre'].'"?');

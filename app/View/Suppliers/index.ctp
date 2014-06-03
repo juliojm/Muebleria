@@ -17,7 +17,7 @@
 			$s['telefono'],
 			$this->Html->link($s['email'],'mailto:'.$s['email']),
 			$s['contacto'],
-			$this->Html->link('[Editar]','/suppliers/editar/'.$s['id']).' '.$this->Html->link('[Borrar]','/suppliers/borrar/'.$s['id']),
+			$this->Html->link('[Editar]','/suppliers/editar/'.$s['id']).' '.$this->Html->link('[Borrar]','/suppliers/borrar/'.$s['id'],array(),'¿Estas seguro de querer borrar "'.$s['nombre'].'"?'),
 		);
 	}
 	
