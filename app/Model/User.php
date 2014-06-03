@@ -42,14 +42,6 @@ public function beforeSave($options = array()) {
 			),
 		),
 		'username' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				'message' => 'En este campo anotas tu Username',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 			'notempty' => array(
 				'rule' => array('notempty'),
 				'message' => 'No puedes dejar vacío este campo',

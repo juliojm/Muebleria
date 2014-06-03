@@ -1,28 +1,25 @@
 ﻿<table style='border-collapse:collapse;' border=2 width=80%>
-<tr>
-	<th>Nombre de Usuario</th>
-	<th>Username</th>
-	<th>Acciones</th>
-</tr>
 <?php
+	echo $this->Html->tableHeaders(array(
+		'Nombre',
+		'Username',
+		'Acciones',
+	));
 
-foreach ($data as $usuario ){
-	printf('<tr>
-		<td><a href="/users/ver/%s">%s</a></td>
-		<td>%s</td>
-		<td><a href="/users/borrar/%s">[Borrar]</a> <a href="/users/editar/%s">[Modificar]</a> </td>
-	</tr>', 
-	$usuario['User']['id'], 
-	$usuario['User']['name'], 
-	$usuario['User']['username'],
-	$usuario['User']['id'], 
-	$usuario['User']['id']
-	);
-}
-
-
-
-?>
-</table>
+	$tabla = array();
+	
+	foreach($data as $u){
+		$u = $u['User'];
+		$tabla[]= array(
+			$this->Html->link($u['name'],'/users/ver/'.$u['id']),
+			$u['username'],
+			$this->Html->link('[Editar]','/users/editar/'.$u['id']).' '.$this->Html->link('[Borrar]','/users/borrar/'.$u['id'],array(),'¿Estas seguro de querer borrar "'.$u['name'].'"?'),
+		);
+	}
+	
+	echo $this->Html->tableCells($tabla);
+	
+	echo "</table>";
+	?>
 </br>
 <a class='boton_crear_nueva_cuenta' href="/users/registrar">Registrar nuevo usuario</a>
