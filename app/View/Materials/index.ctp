@@ -22,4 +22,4 @@
 	echo "</table>";
 	?>
 	</br>
-	<a class='boton_crear_nuevo_material' href="/materials/registrar">Registra otro Material</a>
+	<a class='boton_crear_nueva_cuenta' href="/materials/registrar">Registra otro Material</a>
