@@ -26,7 +26,7 @@
 			<div id="menu">
 				<div class="Boton" id=logear>Boton1</div>
 				<div class="Boton">Boton2</div>
-				<div class="Boton">Boton3</div>	
+				<div class="Boton" id=fechahora></div>	
 			</div>
 			<div style="float:none;clear:both"> </div>
 			
@@ -49,6 +49,27 @@
 		
 		});
 	</script>
+	
+	<!-- Colocar dentro del tag BODY -->
+
+	<script C:\GitHub\Muebleria\app\webroot\js\jquery-1.11.1.js>
+
+		var mydate=new Date()
+		var year=mydate.getYear()
+		if (year < 1000)
+		year+=1900
+		var day=mydate.getDay()
+		var month=mydate.getMonth()
+		var daym=mydate.getDate()
+		if (daym<10)
+		daym="0"+daym
+		var dayarray=new Array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado")
+		var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+		document.write("<small><font color='000000' face='Arial'>"+dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+"</font></small>")
+
+	</script>
+
+
 	
 </body>
 </html>
