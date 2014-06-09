@@ -23,6 +23,7 @@ class MaterialsController extends AppController {
 /*****************************************************************************************************/
 	
 	public function registrar(){
+	
 		if ($this->request->is('post')) {
 			$this->Material->create();
 			if ($this->Material->save($this->request->data)) {
