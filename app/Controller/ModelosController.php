@@ -12,7 +12,7 @@ class ModelosController extends AppController {
 
 /************************************************************/
 
-public function agregar(){
+public function registrar(){
 
 
 	
@@ -20,7 +20,7 @@ public function agregar(){
 		$this->Modelo->create();
 		if ($this->Modelo->save($this->request->data)) {
 			$this->Session->setFlash('Tu modelo se agrego éxitosamente');
-			return $this->redirect('/modelos/');
+			return $this->redirect('/modelos/index');
 		}
 		$this->Session->setFlash('Ocurrió un problema agregando el modelo');
 	}
@@ -41,36 +41,32 @@ public function index(){
 	
 }
 
-/************************************************************/
+/*****************************************************************************************************/
+								/*Por Julio */
+	public function ver($id){	
 
-public function ver ($id){
-	$this->Modelo->recursive=3;
 	if($data=$this->Modelo->findById($id)){
-		$this->set('data',$data);
+			$this->set('data',$data);
 		}
-	else
-	{
-		$this->Session->setFlash('No se encontro el ID de este modelo');
-		$this->redirect('/modelos/');
-	}
-
-
-
-}
-
-/************************************************************/
-
-
-public function eliminar($id){
-
-	if($this->Modelo->delete($id)){
-			$this->Session->setFlash('El modelo se borro corrextamente');
+		else{
+			$this->Session->setFlash('No se encontro el ID de este Modelo');
 			$this->redirect('/modelos/');
 		}
-		$this->Session->setFlash('Ocurrio un problema al borrar este modelo');
-		$this->redirect('/modelos/');
-
-
+		
+}	
+/*****************************************************************************************************/	
+									/*Por Julio */
+	public function eliminar($id){
+	
+		if($this->Modelo->delete($id)){
+			$this->Session->setFlash('Este Modelo se borro correctamente');
+			$this->redirect('/modelos/index');
+		}
+		$this->Session->setFlash('Ocurrio un problema al borrar este Modelo');
+		$this->redirect('/modelos/index');
+		
+		
 }
+/*****************************************************************************************************/
 
 }

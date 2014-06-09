@@ -38,6 +38,6 @@ foreach ($data as $modelo ){
 ?>
 </table>
 </br>
-<a class='boton_crear_nueva_cuenta' href="/modelos/agregar">Agregar nuevo modelo</a>
+<a class='boton_crear_nueva_cuenta' href="/modelos/registrar">Agregar nuevo modelo</a>
 	
 	
