@@ -32,7 +32,7 @@ class ConsumiblesController extends AppController {
 			$this->Consumible->create();
 			if ($this->Consumible->save($this->request->data)) {
 				$this->Session->setFlash('Este Consumible se ha registrado con éxito');
-				$this->redirect('/cosumibles/index');
+				$this->redirect('/consumibles/index');
 			}
 			$this->Session->setFlash('Ocurrió un problema al momento de registrar el Consumible.');
 		}
