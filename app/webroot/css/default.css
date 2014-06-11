@@ -149,9 +149,16 @@ label{
 
 form .error{
 	background: #FFFF00;
-	
 }
+p.error{
 
+	background:red;
+	font-family:arial;
+	color:white;
+	font-size:20px;
+
+
+}
 
 
 .botones{
