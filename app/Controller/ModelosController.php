@@ -45,6 +45,7 @@ public function index(){
 								/*Por Julio */
 	public function ver($id){	
 
+	$this->Modelo->recursive=3;
 	if($data=$this->Modelo->findById($id)){
 			$this->set('data',$data);
 		}

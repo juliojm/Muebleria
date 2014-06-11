@@ -107,3 +107,13 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+
+
+function plantilla($cad='', $a=array()){
+	foreach($a as $etiqueta=>$valor){
+		$cad = str_replace('{'.$etiqueta.'}',$valor,$cad);
+	}
+	return $cad;
+}
+
