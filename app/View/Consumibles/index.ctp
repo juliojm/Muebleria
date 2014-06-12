@@ -1,8 +1,8 @@
 ﻿<table style='border-collapse:collapse;' border=2 width=80%>
 <?php
 	echo $this->Html->tableHeaders(array(
-		'Material_id',
-		'Modelos_id',
+		'Material',
+		'Modelos',
 		'Cantidad',
 		'Acciones',
 	));
@@ -10,18 +10,22 @@
 	$tabla = array();
 	
 	foreach($data as $c){
-		$c = $c['Consumible'];
 		$tabla[]= array(
-			$this->Html->link($c['material_id'],'/consumibles/ver/'.$c['id']),
-			$c['modelo_id'],
-			$c['cantidad'],
-			$this->Html->link('[Editar]','/consumibles/editar/'.$c['id']).' '.$this->Html->link('[Borrar]','/consumibles/borrar/'.$c['id'],array(),'¿Estas seguro de querer borrar "'.$c['cantidad'].'"?'),
+			$this->Html->link($c['Material']['nombre'],'/consumibles/ver/'.$c['Consumible']['id']),
+			$c['Modelo']['nombre'],
+			$c['Consumible']['cantidad'],
+			$this->Html->link('[Editar]','/consumibles/editar/'.$c['Consumible']['id']).' '.
+			$this->Html->link('[Borrar]','/consumibles/borrar/'.$c['Consumible']['id'],array(),
+			'¿Estas seguro de querer borrar "'.$c['Material']['nombre'].'"?'),
 		);
 	}
 	
 	echo $this->Html->tableCells($tabla);
 	
 	echo "</table>";
+	//debug($data);
 	?>
 	</br>
 	<a class='boton_crear_nueva_cuenta' href="/consumibles/registrar">Registrar nuevo Consumible</a>
+	
+	

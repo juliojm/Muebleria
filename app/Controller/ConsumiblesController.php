@@ -59,14 +59,20 @@ class ConsumiblesController extends AppController {
 			$this->Session->setFlash('Este Consumible se borro correctamente');
 			$this->redirect('/consumibles/index');
 		}
-		$this->Session->setFlash('Ocurrio un problema al borrar el Consumible');
+		$this->Session->setFlash('Ocurrio un problema al borrar el Consumible, tal vez el ID no existe');
 		$this->redirect('/consumibles/index');
 		
 		
-}
 
+}
 /*****************************************************************************************************/
 	public function editar($id=-9999999){
+	
+		$lstMateriales=$this->Consumible->Material->find('list');
+		$this->set('lstMateriales',$lstMateriales);
+		
+		$lstModelos=$this->Consumible->Modelo->find('list');
+		$this->set('lstModelos',$lstModelos);
 	
 		if ($id==-9999999){
 			$this->Session->setFlash('Necesitas especificar un Consumible');
