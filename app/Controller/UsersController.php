@@ -89,7 +89,7 @@ public function index(){
 			$this->Session->setFlash('El Usuario se borro corrextamente');
 			$this->redirect('/users/index');
 		}
-		$this->Session->setFlash('Ocurrio un problema al borrar este usuario');
+		$this->Session->setFlash('Ocurrio un problema al borrar este usuario, tal vez el ID no existe');
 		$this->redirect('/users/index');
 		
 }

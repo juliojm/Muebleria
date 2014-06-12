@@ -55,7 +55,7 @@ class MaterialsController extends AppController {
 			$this->Session->setFlash('Este Material se borro correctamente');
 			$this->redirect('/materials/index');
 		}
-		$this->Session->setFlash('Ocurrio un problema al borrar el Material');
+		$this->Session->setFlash('Ocurrio un problema al borrar el Material, tal vez el ID no existe');
 		$this->redirect('/materials/index');
 		
 		

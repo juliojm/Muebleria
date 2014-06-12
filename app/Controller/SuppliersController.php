@@ -55,7 +55,7 @@ class SuppliersController extends AppController {
 			$this->Session->setFlash('Este Supplier se borro correctamente');
 			$this->redirect('/suppliers/index');
 		}
-		$this->Session->setFlash('Ocurrio un problema al borrar este Supplier');
+		$this->Session->setFlash('Ocurrio un problema al borrar este Supplier, tal vez el ID no existe');
 		$this->redirect('/suppliers/index');
 		
 }

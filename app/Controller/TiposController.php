@@ -55,7 +55,7 @@ class TiposController extends AppController {
 			$this->Session->setFlash('Este Mueble se borro correctamente');
 			$this->redirect('/tipos/index');
 		}
-		$this->Session->setFlash('Ocurrio un problema al borrar el Tipo de mueble');
+		$this->Session->setFlash('Ocurrio un problema al borrar el Tipo de mueble, tal vez el ID no existe');
 		$this->redirect('/tipos/index');
 		
 		

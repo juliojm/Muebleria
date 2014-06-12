@@ -49,8 +49,6 @@
 		
 		});
 	</script>
-	
-	<!-- Colocar dentro del tag BODY -->
 
 	<script C:\GitHub\Muebleria\app\webroot\js\jquery-1.11.1.js>
 
