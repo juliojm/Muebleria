@@ -31,7 +31,7 @@
 	echo $this->Html->tableCells($tabla);
 	
 	echo "</table>";
-	debug($data);
+	//debug($data);
 	?>
 	</br>
 	<a class='boton_crear_nueva_cuenta' href="/ventas/registrar">Registrar nueva Venta</a>

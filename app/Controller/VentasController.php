@@ -66,6 +66,8 @@ public function index(){
 }
 /*****************************************************************************************************/
 	public function editar($id=-9999999){
+		$lstModelos=$this->Venta->Modelo->find('list');
+		$this->set('lstModelos',$lstModelos);
 	
 			if ($id==-9999999){
 			$this->Session->setFlash('Necesitas especificar una Venta para editarla');
