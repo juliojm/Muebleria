@@ -11,7 +11,7 @@
 	
 	foreach($data as $c){
 		$tabla[]= array(
-			$this->Html->link($c['Compra']['piezas'],'/compra/ver/'.$c['Compra']['id']),
+			$this->Html->link($c['Compra']['piezas'],'/compras/ver/'.$c['Compra']['id']),
 			$c['Compra']['monto_compra'],
 			$c['Material']['nombre'],
 			$this->Html->link('[Editar]','/compras/editar/'.$c['Compra']['id']).' '.

@@ -2,16 +2,18 @@
 App::uses('AppController', 'Controller');
 
 class ComprasController extends AppController {
+							
+								/* CONTROLODADOR ELABORADO POR  --JULIO--*/
 
-/************************************************************/
+/*****************************************************************************************************/
 
 	public function beforeFilter(){
 		parent::beforeFilter();
 		
 	}
 
-/************************************************************/
-public function index(){
+/*****************************************************************************************************/
+	public function index(){
 		$data = $this->Compra->find("all");	
 		$this->set('data' , $data);
 		
@@ -52,7 +54,7 @@ public function index(){
 	public function borrar($id){
 	
 		if($this->Compra->delete($id)){
-			$this->Session->setFlash('Esta Compra se borro correctamente');
+			$this->Session->setFlash('Esta Compra se elimino correctamente');
 			$this->redirect('/compras/index');
 		}
 		$this->Session->setFlash('Ocurrio un problema al borrar la compra o tal vez el ID no existe');
@@ -69,7 +71,7 @@ public function index(){
 		
 	
 		if ($id==-9999999){
-			$this->Session->setFlash('Necesitas especificar una Compra');
+			$this->Session->setFlash('Necesitas especificar una Compra para editarla');
 			$this->redirect('/compras/index');
 		}
 		if ($this->request->is('post')) {
@@ -84,7 +86,7 @@ public function index(){
 			$this->set('data',$data);
 		}
 		else{
-			$this->Session->setFlash('No se encontro a este Compra');
+			$this->Session->setFlash('No se encontro a esta Compra');
 			$this->redirect('/compras/');
 		}
 			
