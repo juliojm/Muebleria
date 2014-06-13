@@ -166,10 +166,13 @@ p.error{
 	font-size:20px;
 	font-family:arial;
 	font-weight:bold;
-	color:red;
-	background:#638cb5;
-	background: radial-gradient(center top , circle , #ccc, #555 184px);
-	border:0px;
-	width:800px;
-	height:600px;
+	text-decoration:none;
+	color:white;
+	background:#5DB8B1;
+	width:150px;
+	border-radius: 5px;
+	text-align:center;
+	padding:10px 10px; 
+	margin:5px;
+	display:block;
 }

@@ -26,4 +26,4 @@
 	echo "</table>";
 	?>
 	</br>
-	<a class='boton_crear_nuevo_supplier' href="/suppliers/registrar">Registrar nuevo supplier</a>
+	<a class='boton_crear_nuevo_supplier' href="/suppliers/registrar">Registrar nuevo proveedor</a>

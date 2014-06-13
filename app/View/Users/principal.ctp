@@ -1,16 +1,21 @@
-﻿<a href="/modelos/agregar">boton</a>
+﻿
+<a class='botones' href="/users/">Usuarios</a>
 <br>
 <br>
-<a class='botones' href="/">Boton1</a>
+
+<a class='botones' href="/modelos/">Modelos</a>
 <br>
 <br>
-<a class='botones' href="/">Boton2</a>
+
+<a class='botones' href="/materials/">Materiales</a>
 <br>
 <br>
-<a class='botones' href="/">Boton3</a>
+
+<a class='botones' href="/users/">Usuarios</a>
 <br>
 <br>
-<a class='botones' href="/">Boton4</a>
+
+<a class='botones' href="/suppliers/">Proovedores</a>
 <br>
 <br>
-<a class='botones' href="/">Boton5</a>
+
