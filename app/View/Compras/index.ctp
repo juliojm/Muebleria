@@ -4,6 +4,7 @@
 		'Piezas',
 		'Monto de la compra',
 		'Material',
+		'Costo',
 		'Acciones',
 	));
 
@@ -14,6 +15,7 @@
 			$this->Html->link($c['Compra']['piezas'],'/compras/ver/'.$c['Compra']['id']),
 			$c['Compra']['monto_compra'],
 			$c['Material']['nombre'],
+			$c['Material']['costo'],
 			$this->Html->link('[Editar]','/compras/editar/'.$c['Compra']['id']).' '.
 			$this->Html->link('[Borrar]','/compras/borrar/'.$c['Compra']['id'],array(),
 			'¿Estas seguro de querer borrar "'.$c['Compra']['piezas'].'"?'),

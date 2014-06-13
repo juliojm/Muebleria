@@ -76,6 +76,7 @@ class ComprasController extends AppController {
 		}
 		if ($this->request->is('post')) {
 			$this->Compra->id=$id;
+			$this->log(print_r($this->request->data,true));
 			if($this->Compra->save($this->request->data)){
 				$this->Session->setFlash('El regsitro se ha modificado exitosamente');
 				$this->redirect('/compras/');
