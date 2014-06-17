@@ -25,8 +25,8 @@
 			<div id="Letras">Sistema Mueblería</div>
 			<div id="menu">
 				<div class="Boton" id=logear>Boton1</div>
-				<div class="Boton">Boton2</div>
-				<div class="Boton" id=fechahora></div>	
+				
+			
 			</div>
 			<div style="float:none;clear:both"> </div>
 			

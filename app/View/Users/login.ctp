@@ -7,4 +7,4 @@
 	
 	echo  "<h2>Aún no tines una cuenta, puedes crear tu cuenta ahora. </h2>";
 		
-	echo "<a class='boton_crear_cuenta' href='/users/registrar'>Crear una cuenta</a>";
+	echo "<a  href='/users/registrar'>Registrar</a>";
