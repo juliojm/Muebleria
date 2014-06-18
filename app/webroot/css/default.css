@@ -176,3 +176,18 @@ p.error{
 	margin:5px;
 	display:block;
 }
+
+.opcion{
+	font-family:times,arial;
+	font-size:20px;
+	padding:10px 10px;
+}
+
+.titulos{
+	font-family:times,arial;
+	font-size:25px;
+	padding:10px 10px;
+	text-align:center;
+	color: #111;
+	text-shadow: 0px 2px 3px #555;
+}

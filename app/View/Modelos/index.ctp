@@ -1,4 +1,9 @@
-﻿<table style='border-collapse:collapse;' border=2 width=80%>
+﻿<div style="text-align:center">
+	<a class='titulos'>Página de Modelos</a>
+</div>
+<br>
+
+<table style='border-collapse:collapse;' border=2 width=80%>
 <tr>
 	<th>Nombre del modelo</th>
 	<th>Descripción</th>

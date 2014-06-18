@@ -1,4 +1,9 @@
-﻿<table style='border-collapse:collapse;' border=2 width=80%>
+﻿<div style="text-align:center">
+	<a class='titulos'>Página de Compras</a>
+</div>
+<br>
+
+<table style='border-collapse:collapse;' border=2 width=80%>
 <?php
 	echo $this->Html->tableHeaders(array(
 		'Piezas',
