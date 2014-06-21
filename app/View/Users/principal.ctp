@@ -5,20 +5,20 @@
 <a class='opcion'>Elige una opción</a>
 
 <br></br>
-<a class='botones_izquierdos' href="/ventas/">Vender</a>
+<a class='botones_izquierdos' href="/ventas/">Hacer una Venta</a>
 <a class='botones' href="/users/">Usuarios</a>
 
 <br></br>
 
 
-<a class='botones' href="/modelos/">Modelos</a>
-<a class='botones_izquierdos2' href="/compras/">Compras</a>
+<a class='botones' href="/modelos/">Catalogo Modelos</a>
+<a class='botones_izquierdos2' href="/compras/">Realizar una Compra</a>
 
 <br></br>
 
 
-<a class='botones' href="/materials/">Materiales</a>
-<a class='botones_izquierdos' href="/consumibles/">Cosnumibles</a>
+<a class='botones' href="/materials/">Hacer Pedido</a>
+<a class='botones_izquierdos' href="/consumibles/">Cosnumibles Disponibles</a>
 <br></br>
 
 

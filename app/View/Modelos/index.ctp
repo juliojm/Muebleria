@@ -1,6 +1,8 @@
 ﻿<div style="text-align:center">
 	<a class='titulos'>Página de Modelos</a>
+	
 </div>
+<a class='botones_izquierdos3' href="/users/principal">Voler al Menú</a>
 <a class='botones_izquierdos2' href="/materials/">Materiales Disponibles</a>
 <a class='botones_izquierdos2' href="/tipos/">Tipos Disponibles</a>
 <a class='botones_izquierdos2' href="/consumibles/">Consumibles Existentes</a>

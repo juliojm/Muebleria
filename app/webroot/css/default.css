@@ -214,6 +214,25 @@ p.error{
 	
 	
 }
+
+.botones_izquierdos3{
+	font-size:15px;
+	font-family:arial;
+	font-weight:bold;
+	text-decoration:none;
+	color:white;
+	background:#8FB32B;
+	width:80px;
+	border-radius: 2px;
+	text-align:center;
+	padding:5px 15px; 
+	margin:5px;
+	display:block;
+	float: right;
+
+	
+	
+}
 .opcion{
 	font-family:times,arial;
 	font-size:20px;
@@ -237,3 +256,4 @@ p.error{
 	color: #4169E1;
 	text-shadow: 0px 2px 3px #555;
 }
+
