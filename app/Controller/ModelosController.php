@@ -97,7 +97,7 @@ public function index(){
 
 /*****************************************************************************************************/
 
-public function archivos() {
+/*public function archivos() {
          
         $this->Upload->create();
          
@@ -122,6 +122,11 @@ public function archivos() {
         }
          
     }
+	*/
+
+
+
+}	
 	
 	
 	
@@ -133,7 +138,4 @@ public function archivos() {
 	
 	
 	
-	
-	
-     
-}
+   
