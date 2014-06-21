@@ -70,6 +70,25 @@ class ArchivosController extends AppController {
 }
 }
 */	
+public function borrar($id=-999){	
+
+	if($id==-999){
+		$this->Session->setFlash('Especifica el Archivo que deseas borrar');
+		$this->redirect('/modelos/');
+	}else{
+		$data = $this->Archivo->findById($id);
+		$id_producto = $data['Archivo']['id'];
+		if($this->Archivo->delete($id)){
+			$this->Session->setFlash('Tu Archivo se eliminó correctamente');
+			$this->redirect('/modelos/');
+		}
+	}
+	$this->Session->setFlash('Ocurrió un problema al eliminar este Archivo');
+	$this->redirect('/modelos/');
+}
+
+/************************************************************/
+
 public function agregar($id=-999){
 	$this->set('id',$id);
 	if ($this->request->is('post')) {
@@ -82,23 +101,23 @@ public function agregar($id=-999){
 		
 			if ($this->Archivo->save($data)) {
 				$this->Session->setFlash('Tu Archivo se guardo correctamente');
-				$this->redirect("/users/");
+				$this->redirect("/modelos/");
 			}
 		}
 		$this->Session->setFlash('Ocurrió un problema al guardar este archivo');
-		$this->redirect("/users/");
+		$this->redirect("/modelos/");
 		
 		}
 	}
-	
-	public function index($id = -999){
+
+
+	public function ver($id = -999){
 		if ($id == -999){
-			$this->Session->setFlash('No has seleccionado ningún Evento');
+			$this->Session->setFlash('No has seleccionado ningún Archivo');
 			$this->redirect('/users/');
 		}
 		$data = $this->Archivo->findById($id);
 		$this->set('data',$data); 
 }
-	
-	
 }
+
