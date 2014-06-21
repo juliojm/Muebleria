@@ -2,6 +2,8 @@
 	<a class='titulos'>Página de Consumibles</a>
 </div>
 <a class='botones_izquierdos2' href="/modelos/">Volver a Modelos</a>
+<a class='botones_izquierdos3' href="/users/principal">Voler al Menú</a>
+<a class='botones_izquierdos2' href="/materials/registrar">Pedir Material</a>
 <br>
 <table style='border-collapse:collapse;' border=2 width=80%>
 <?php

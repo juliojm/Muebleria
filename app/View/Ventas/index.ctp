@@ -1,6 +1,7 @@
 ﻿<div style="text-align:center">
 	<a class='titulos'>Página de Ventas</a>
 </div>
+<a class='botones_izquierdos3' href="/users/principal">Voler al Menú</a>
 <br>
 
 <table style='border-collapse:collapse;' border=2 width=80%>
