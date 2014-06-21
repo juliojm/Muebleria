@@ -28,7 +28,7 @@ foreach ($data as $modelo ){
 		<td>%s</td>
 		<td>%s</td>
 		<td>%s</td>
-		<td><a href="/modelos/eliminar/%s">[Eliminar]</a> <a href="/modelos/editar/%s">[Editar]</a> </td>
+		<td><a href="/modelos/eliminar/%s">[Eliminar]</a>  <a href="/modelos/editar/%s">[Editar]</a> </td>
 	</tr>', 
 	$modelo['Modelo']['id'], 
 	$modelo['Modelo']['nombre'], 
