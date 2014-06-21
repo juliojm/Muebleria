@@ -11,4 +11,9 @@
 	echo $this->Form->input('tipo_id',array(
 		'options'=>$lstTipos
 	));
+?>
+	<a class='boton_crear_nueva_cuenta' href="/tipos/registrar">Agrega un nuevo tipo</a>
+<?php
 	echo $this->Form->end('Agregar Modelo');
+	
+	

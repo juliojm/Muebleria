@@ -1,4 +1,7 @@
-﻿<?php
+﻿<a class='titulos2'>Datos del Modelo:</a>
+<br></br>
+<a class='botones_izquierdos2' href="/modelos/">Volver a Modelos</a>
+<?php
 	$modelo = "Nombre: {nombre}<br>
 	Descripcion: {descripcion}<br>
 	Cantidad en bodega: {cantidad_en_bodega}<br>

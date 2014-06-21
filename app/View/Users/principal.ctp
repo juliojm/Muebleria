@@ -3,25 +3,26 @@
 </div>
 <br>
 <a class='opcion'>Elige una opción</a>
-<br>
+
+<br></br>
 <a class='botones_izquierdos' href="/ventas/">Vender</a>
 <a class='botones' href="/users/">Usuarios</a>
 
-<br>
-<br>
+<br></br>
+
 
 <a class='botones' href="/modelos/">Modelos</a>
-<a class='botones_izquierdos' href="/compras/">Compras</a>
+<a class='botones_izquierdos2' href="/compras/">Compras</a>
 
-<br>
-<br>
+<br></br>
+
 
 <a class='botones' href="/materials/">Materiales</a>
 <a class='botones_izquierdos' href="/consumibles/">Cosnumibles</a>
-<br>
-<br>
+<br></br>
+
 
 <a class='botones' href="/suppliers/">Proovedores</a>
-<a class='botones_izquierdos' href="/tipos/">Tipos</a>
+
 
 

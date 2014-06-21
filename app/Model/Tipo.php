@@ -21,14 +21,6 @@ class Tipo extends AppModel {
  */
 	public $validate = array(
 		'nombre' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				'message' => 'Este campo es para el nombre',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 			'notempty' => array(
 				'rule' => array('notempty'),
 				'message' => 'No puedes dejar vacío este campo',

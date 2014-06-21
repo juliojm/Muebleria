@@ -1,6 +1,7 @@
 ﻿<div style="text-align:center">
-	<a class='titulos'>Página de Tipos</a>
+	<a class='titulos'>Todos los tipos Actuales</a>
 </div>
+<a class='botones_izquierdos2' href="/modelos/">Volver a Modelos</a>
 <br>
 <table style='border-collapse:collapse;' border=2 width=80%>
 <?php
