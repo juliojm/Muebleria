@@ -3,38 +3,18 @@ App::uses('AppController', 'Controller');
 
 class ArchivosController extends AppController {
 
-
-
-/************************************************************/
-
 	public function beforeFilter(){
 		parent::beforeFilter();
 
 	}
 
 /************************************************************/
-<<<<<<< HEAD
-public function agregar(){
-if ($this->request->is('post')) {
-		if ($this->request->data['Archivos']['nombre_archivo']['type']=='image/jpeg'){
-			$nombre=rand(111111111,999999999).'.jpg';
-			copy($this->request->data['Archivos']['nombre_archivo']['tmp_name'],WWW_ROOT."/img/fotos/$nombre");
-			$this->Foto->create();
-			//$data['Foto']['producto_id']=$producto_id;
-			//$data['Foto']['archivo']=$nombre;
-		
-			if ($this->Foto->save($data)) {
-				$this->Session->setFlash('Tu foto se guardo correctamente');
-				$this->redirect("/");
-			}
-		}
-		$this->Session->setFlash('Ocurrió un problema guardando tu foto');
-		
-		}
-	}
-=======
+
+
+
+	
 						/*Por Julio*/
-public function descargar($id = null)
+/*public function descargar($id = null)
     {
         if (!$id)
         {
@@ -50,8 +30,75 @@ public function descargar($id = null)
         $this->render();
     }}
 /************************************************************/
-public function index(){
+/*public function index(){
 >>>>>>> origin/master
 
 	}
+	*/
+	
+
+	
+/*	public function borrar($id=-999){	
+
+	if($id==-999){
+		$this->Session->setFlash('Especifica el Archivo que deseas borrar');
+		$this->redirect('/eventos/mostrar');
+	}else{
+		$data = $this->Archivo->findById($id);
+		$id_producto = $data['Archivo']['id'];
+		if($this->Archivo->delete($id)){
+			$this->Session->setFlash('Tu Archivo se eliminó correctamente');
+			$this->redirect('/eventos/mostrar');
+		}
+	}
+	$this->Session->setFlash('Ocurrió un problema al eliminar este Archivo');
+	$this->redirect('/eventos/mostrar');
+}
+*/
+/************************************************************/
+
+
+
+/*
+	public function ver($id = -999){
+		if ($id == -999){
+			$this->Session->setFlash('No has seleccionado ningún Evento');
+			$this->redirect('/users/mifamilia');
+		}
+		$data = $this->Archivo->findById($id);
+		$this->set('data',$data); 
+}
+}
+*/	
+public function agregar($id=-999){
+	$this->set('id',$id);
+	if ($this->request->is('post')) {
+		if ($this->request->data['Archivo']['archivo']['type']=='image/jpeg'){
+			$nombre=rand(111111111,999999999).'.jpg';
+			copy($this->request->data['Archivo']['archivo']['tmp_name'],WWW_ROOT."/img/archivos/$nombre");
+			$this->Archivo->create();
+			$data=$this->request->data;
+			$data['Archivo']['nombre_archivo']=$nombre;
+		
+			if ($this->Archivo->save($data)) {
+				$this->Session->setFlash('Tu Archivo se guardo correctamente');
+				$this->redirect("/users/");
+			}
+		}
+		$this->Session->setFlash('Ocurrió un problema al guardar este archivo');
+		$this->redirect("/users/");
+		
+		}
+	}
+	
+	public function index($id = -999){
+		if ($id == -999){
+			$this->Session->setFlash('No has seleccionado ningún Evento');
+			$this->redirect('/users/');
+		}
+		$data = $this->Archivo->findById($id);
+		$this->set('data',$data); 
+}
+	
+	
 }
