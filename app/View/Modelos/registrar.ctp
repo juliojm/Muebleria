@@ -1,6 +1,5 @@
 ﻿<?php
-
-
+	echo"<h1>Alta de un nuevo modelo.</h1>";
 	echo $this->Form->create();
 	echo $this->Form->input('nombre');
 	echo $this->Form->input('descripcion');
@@ -12,7 +11,7 @@
 		'options'=>$lstTipos
 	));
 ?>
-	<a class='boton_crear_nueva_cuenta' href="/tipos/registrar">Agrega un nuevo tipo</a>
+	<a class='boton_crear_nuevo_supplier' href="/tipos/registrar">Agrega un nuevo tipo</a>
 <?php
 	echo $this->Form->end('Agregar Modelo');
 	

@@ -1,5 +1,5 @@
 ﻿<?php
-	echo"<h2>Aquí registras tu Consumible.</h2>";
+	echo"<h1>Aquí registras tu Consumible.</h1>";
 	echo $this->Form->create();
 	echo $this->Form->input('material_id',array('options'=>$lstMateriales));
 	echo $this->Form->input('modelo_id',array('options'=>$lstModelos));

@@ -40,4 +40,4 @@
 	//debug($data);
 	?>
 	</br>
-	<a class='boton_crear_nueva_cuenta' href="/ventas/registrar">Registrar nueva Venta</a>
+	<a class='boton_crear_nueva_cuenta' href="/ventas/registrar">Registra una nueva Venta</a>

@@ -1,5 +1,6 @@
 ﻿<?php
-debug($data);
+//debug($data);
+	echo"<h1>Datos de esta Compra.</h1>";
 	echo  "Piezas: ",$data["Compra"]["piezas"],"<br/>";
 	echo  "Monto de la compra: ",$data["Compra"]["monto_compra"],"<br/>";
 	echo  "Material : ",$data["Material"]["nombre"],"<br/>";
