@@ -12,7 +12,7 @@
 
 
 <a class='botones' href="/modelos/">Catalogo Modelos</a>
-<a class='botones_izquierdos2' href="/compras/">Realizar una Compra</a>
+<a class='botones_izquierdos' href="/compras/">Realizar una Compra</a>
 
 <br></br>
 
@@ -22,7 +22,7 @@
 <br></br>
 
 
-<a class='botones' href="/suppliers/">Proovedores</a>
+<a class='botones' href="/suppliers/">Lista Proveedores</a>
 
 
 

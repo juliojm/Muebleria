@@ -1,6 +1,8 @@
 ﻿<div style="text-align:center">
 	<a class='titulos'>Página de Proveedores</a>
 </div>
+<a class='botones_izquierdos3' href="/users/principal">Voler al Menú</a>
+<a class='botones_izquierdos2' href="/compras/">Ir a Compras</a>
 <br>
 
 <table style='border-collapse:collapse;' border=2 width=80%>
@@ -31,4 +33,4 @@
 	echo "</table>";
 	?>
 	</br>
-	<a class='boton_crear_nuevo_supplier' href="/suppliers/registrar">Registrar nuevo proveedor</a>
+	<a class='boton_crear_nueva_cuenta' href="/suppliers/registrar">Registrar nuevo proveedor</a>
