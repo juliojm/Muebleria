@@ -1,6 +1,6 @@
 ﻿<?php
 
-	echo "<h2>Edita aquí el Modelo</h2>";
+	echo "<h2>Editar Modelo</h2>";
 		echo $this->Form->create();
 		echo $this->Form->input('nombre', array('default'=>$data['Modelo']['nombre']));
 		echo $this->Form->input('descripcion',array('default'=>$data['Modelo']['descripcion']));
