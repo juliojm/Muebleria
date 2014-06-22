@@ -239,9 +239,27 @@ p.error{
 	display:block;
 	float: right;
 
+}
+
+.botones_izquierdos4{
+	font-size:15px;
+	font-family:arial;
+	font-weight:bold;
+	text-decoration:none;
+	color:white;
+	background:#207ce5;
+	width:80px;
+	border-radius: 2px;
+	text-align:center;
+	padding:5px 15px; 
+	margin:5px;
+	display:block;
+	float: right;
+
 	
 	
 }
+
 .opcion{
 	font-family:times,arial;
 	font-size:20px;
@@ -269,4 +287,10 @@ p.error{
 h1{
 	font-family:arial;
 	font-size:25px;
+}
+
+h2{
+	font-family:times;
+	font-size:20px;
+	color:#131313;
 }

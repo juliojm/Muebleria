@@ -1,5 +1,7 @@
-﻿<?php
+﻿<a class='botones_izquierdos4' href="/suppliers/">Volver a Proveedores</a>
+<?php
 //debug($data);
+	echo"<h2>Información Proveedor.</h2>";
 	echo  "Nombre : ",$data["Supplier"]["nombre"],"<br/>";
 	echo  "Telefono: ",$data["Supplier"]["telefono"],"<br/>";
 	echo  "Email : ",$data["Supplier"]["email"],"<br/>";

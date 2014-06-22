@@ -1,6 +1,7 @@
-﻿<a class='titulos2'>Datos del Modelo:</a>
+﻿<a class='botones_izquierdos4' href="/modelos/">Volver a Modelos</a>
+<h2>Datos del Modelo.</h2>
 <br></br>
-<a class='botones_izquierdos2' href="/modelos/">Volver a Modelos</a>
+
 <?php
 	$modelo = "Nombre: {nombre}<br>
 	Descripcion: {descripcion}<br>
@@ -32,8 +33,12 @@
 		'costo'					=>$data['Modelo']['costo'],
 		'tipo'					=>$data['Tipo']['nombre'],
 	));
-	
-	echo "<h1>Lista de consumibles</h1><table border=1>";
+	?>
+	<br></br>
+	<a class='titulos2'>Lista Consumibles:</a>
+	<br></br>
+<?php
+	echo "<table border=1>";
 	foreach($data['Consumible'] as $c){
 		echo plantilla($consumible,array(
 			'material'=>$c['Material']['nombre'],

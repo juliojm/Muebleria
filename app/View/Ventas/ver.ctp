@@ -1,5 +1,7 @@
-﻿<?php
+﻿<a class='botones_izquierdos4' href="/ventas/">Volver a Ventas</a>
+<?php
 //debug($data);
+	echo"<h2>Informacion de la Venta.</h2>";
 	echo  "Venta: ",$data["Modelo"]["nombre"],"<br/>";
 	echo  "Descripcion: ",$data["Modelo"]["descripcion"],"<br/>";
 	echo  "Costo: ",$data["Modelo"]["costo"],"<br/>";
