@@ -16,7 +16,7 @@
 		$t = $t['Tipo'];
 		$tabla[]= array(
 			$this->Html->link($t['nombre'],'/tipos/ver/'.$t['id']),
-			$this->Html->link('[Editar]','/tipos/editar/'.$t['id']).' '.$this->Html->link('[Agregar imagen]','/archivos/agregar/'.$t['id']).' '.$this->Html->link('[Borrar]','/tipos/borrar/'.$t['id'],array(),'¿Estas seguro de querer borrar "'.$t['nombre'].'"?'),
+			$this->Html->link('[Editar]','/tipos/editar/'.$t['id']).' '.$this->Html->link('[Borrar]','/tipos/borrar/'.$t['id'],array(),'¿Estas seguro de querer borrar "'.$t['nombre'].'"?'),
 		);
 	}
 	

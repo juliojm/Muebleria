@@ -3,11 +3,6 @@ App::uses('AppController', 'Controller');
 
 class ArchivosController extends AppController {
 
-	public function beforeFilter(){
-		parent::beforeFilter();
-
-	}
-
 /************************************************************/
 
 
@@ -70,6 +65,7 @@ class ArchivosController extends AppController {
 }
 }
 */	
+/************************************************************/
 public function borrar($id=-999){	
 
 	if($id==-999){
@@ -110,14 +106,16 @@ public function agregar($id=-999){
 		}
 	}
 
-
+/************************************************************/
 	public function ver($id = -999){
 		if ($id == -999){
 			$this->Session->setFlash('No has seleccionado ningún Archivo');
-			$this->redirect('/users/');
+			$this->redirect('/modelos/ver/'.$modelo_id);
 		}
 		$data = $this->Archivo->findById($id);
 		$this->set('data',$data); 
 }
+/************************************************************/
+	
 }
 

@@ -8,7 +8,7 @@
 <a class='botones_izquierdos2' href="/consumibles/">Consumibles Existentes</a>
 <br>
 
-<table style='border-collapse:collapse;' border=2 width=80%>
+<table style='border-collapse:collapse;' border=2 width=90%>
 <tr>
 	<th>Nombre del modelo</th>
 	<th>Descripción</th>
@@ -28,7 +28,7 @@ foreach ($data as $modelo ){
 		<td>%s</td>
 		<td>%s</td>
 		<td>%s</td>
-		<td><a href="/modelos/eliminar/%s">[Eliminar]</a>  <a href="/modelos/editar/%s">[Editar]</a> </td>
+		<td><a href="/modelos/eliminar/%s">[Eliminar]</a>  <a href="/modelos/editar/%s">[Editar]</a>  <a href="/archivos/agregar/%s">[Agr. Imagen]</a></td>
 	</tr>', 
 	$modelo['Modelo']['id'], 
 	$modelo['Modelo']['nombre'], 
@@ -37,6 +37,7 @@ foreach ($data as $modelo ){
 	$modelo['Modelo']['cantidad_en_bodega'],
 	$modelo['Modelo']['precio'],
 	$modelo['Modelo']['costo'],
+	$modelo['Modelo']['id'],
 	$modelo['Modelo']['id'],
 	$modelo['Modelo']['id']
 	

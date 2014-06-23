@@ -33,12 +33,9 @@
 		'costo'					=>$data['Modelo']['costo'],
 		'tipo'					=>$data['Tipo']['nombre'],
 	));
-	?>
-	<br></br>
-	<a class='titulos2'>Lista Consumibles:</a>
-	<br></br>
-<?php
-	echo "<table border=1>";
+	
+	echo "<br>";
+	echo "<h2>Lista de consumibles</h2><table border=1>";
 	foreach($data['Consumible'] as $c){
 		echo plantilla($consumible,array(
 			'material'=>$c['Material']['nombre'],
@@ -57,4 +54,12 @@
 	}
 	echo "</table>";
 	
-	echo '<a href="/modelos/eliminar/'.$data["Modelo"]["id"].'">Borrar Modelo</a>';
+	echo "<br/><a class=boton_crear_nueva_cuenta href='/modelos/eliminar/".$data['Modelo']['id']."'>Borrar todo el Modelo</a></div>";
+
+	echo "<h2>Imagnes de este modelo.</h2>";
+	
+	
+	foreach($data["Archivo"] as $p){
+		echo "<img height=200 style='margin:5px;' src='/img/archivos/".$p["nombre_archivo"]."' />
+		<div class = 'borrar'><a class=boton_crear_nueva_cuenta href='/archivos/borrar/".$p['id']."'>Borrar Archivo</a></div><hr>";
+		}
