@@ -60,6 +60,6 @@
 	
 	
 	foreach($data["Archivo"] as $p){
-		echo "<img height=200 style='margin:5px;' src='/img/archivos/".$p["nombre_archivo"]."' />
+		echo "<img height=150 style='margin:3px; padding:5px 20px; border:5px; 'src='/img/archivos/".$p["nombre_archivo"]."' />
 		<div class = 'borrar'><a class=boton_crear_nueva_cuenta href='/archivos/borrar/".$p['id']."'>Borrar Archivo</a></div><hr>";
 		}
