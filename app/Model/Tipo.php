@@ -23,7 +23,7 @@ class Tipo extends AppModel {
 		'nombre' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'No puedes dejar vacío este campo',
+				'message' => 'No puedes dejar vacío este campo, es de solo texto',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

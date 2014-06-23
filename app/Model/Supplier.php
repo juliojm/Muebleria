@@ -24,7 +24,7 @@ class Supplier extends AppModel {
 		'nombre' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Este campo no puede estar vacío',
+				'message' => 'Este campo de solo texto no puede estar vacío',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -34,7 +34,7 @@ class Supplier extends AppModel {
 		'telefono' => array(
 			'alphanumeric' => array(
 				'rule' => array('alphanumeric'),
-				'message' => 'Algo esta mal, aqui anotas el teléfono (tipo: alfanumérico)',
+				'message' => 'Algo esta mal, aqui anotas el teléfono (tipo: alfanumérico) por ejemplo: 4641234567',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

@@ -35,7 +35,7 @@ class Material extends AppModel {
 		'costo' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				'message' => 'Hey, aquí anotas valores decimales',
+				'message' => 'Hey, aquí anotas valores decimales por ejempo: 13.51',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

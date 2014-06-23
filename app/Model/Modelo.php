@@ -36,7 +36,7 @@ class Modelo extends AppModel {
 		'descripcion' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Este campo no puede estar vacío',
+				'message' => 'Este campo de solo texto no puede estar vacío',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -46,7 +46,7 @@ class Modelo extends AppModel {
 		'cantidad_en_bodega' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				'message' => 'Algo esta mal, aqui van solo valores decimales',
+				'message' => 'Algo esta mal, aqui van solo valores decimales, por ejemplo: 34',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -64,7 +64,7 @@ class Modelo extends AppModel {
 		'cantidad_en_fabrica' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				'message' => 'Algo esta mal, aquí van solo valores decimales',
+				'message' => 'Algo esta mal, aquí van solo valores decimales, por ejemplo: 567',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -82,7 +82,7 @@ class Modelo extends AppModel {
 		'precio' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				'message' => 'Aquí solo van valores decimales',
+				'message' => 'Aquí solo van valores decimales, por ejemplo: 987.56',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -100,7 +100,7 @@ class Modelo extends AppModel {
 		'costo' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				'message' => 'Algo esta mal, en este campo son solo decimales',
+				'message' => 'Algo esta mal, en este campo son solo decimales, por ejemplo: 987.56',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
